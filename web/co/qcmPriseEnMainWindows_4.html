@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <title>Windows 8 - Exercice&nbsp;: Question 4</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="J. Tissier ">
+  <meta name="keywords" content>
+  <meta name="date" content="17/07/2015">
+  <link rel="stylesheet" type="text/css" href="../wdgt/scCodeMgr/scCodeMgr.css">
+  <link rel="stylesheet" type="text/css" href="../wdgt/scImgMgr/scImgMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {};
+/*1*/ scServices["scLoad"] = {loadFromRoot:function(pUrl){window.location.href="../"+pUrl;}, getPathFromRoot:function(pPath){return "../"+pPath;}, getUrlFromRoot:function(pHref){if(!this.fRootOffset) this.fRootOffset = scCoLib.hrefBase().length-31; return pHref.substring(this.fRootOffset);},getRootUrl:function(){if(!this.fRootUrl) this.fRootUrl = scCoLib.hrefBase().substring(0,scCoLib.hrefBase().length-32); return this.fRootUrl;}};
+</script>
+  <!--[if lt IE 9]><script type="text/JavaScript" src="../wdgt/html5shiv/html5shiv.js"></script><![endif]--><script type="text/JavaScript" src="../lib-sm/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../svc/scorm.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sma/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../svc/scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../wdgt/tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../wdgt/dynSizes/dynSizes.js"></script>
+  <script type="text/JavaScript" src="../wdgt/outMgr/outMgr.js"></script>
+  <script type="text/JavaScript" src="../wdgt/scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../wdgt/searchMgr/searchMgr.js"></script>
+  <script type="text/JavaScript" src="../wdgt/scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{var vCurrDir = scCoLib.hrefBase().substring(0,scCoLib.hrefBase().lastIndexOf("/")+1); if(window.opener && window.opener.location.href.lastIndexOf(vCurrDir, vCurrDir.length)==0 && window.opener.scServices) scServices = window.opener.scServices; else if(window.parent && window.parent.location.href.lastIndexOf(vCurrDir, vCurrDir.length)==0 && window.parent.scServices) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/chi:span.capTi"});
+
+</script>
+  <meta name="generator" content="SCENARI 4.1.10 / Opale 3.5.014 - http://scenari-platform.org/opale">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="revision" content="2015-07-27 09:29">
+  <link rel="start" href="Exports_web.html" title="Windows 8">
+  <script type="text/JavaScript">
+outMgr.declareOutline("windows8.txt");
+	</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/html.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/struct_page.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="../skin/css/buttons.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="../skin/css/mnu_page.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="../skin/css/mnu_child.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="../skin/css/transf.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/indexes.css">
+  <link type="text/css" rel="stylesheet" href="../skin/css/assmnt.css">
+  <link type="text/css" rel="stylesheet" href="../skin/css/assmnt_train.css">
+  <link type="text/css" rel="stylesheet" href="../skin/css/sub_windows.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="../skin/css/search.css" media="screen">
+  <!--[if IE]><link type="text/css" rel="stylesheet" href="../skin/css/ie.css" media="screen"/><![endif]-->
+  <!--[if lt IE 7]><link type="text/css" rel="stylesheet" href="../skin/css/ie6_page.css" media="screen"/><link type="text/css" rel="stylesheet" href="../skin/css/ie6_sub_windows.css" media="all"/><![endif]--><link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+ </head>
+ <body>
+  <div id="tplFra"><div id="tplTop"><ul id="accessibility"><li class="tplWaiContent"><a class="waiBtn contentWaiBtn" href="#content" title="aller au contenu"><span>contenu</span></a></li><li class="tplWaiMenu"><a class="waiBtn menuWaiBtn" href="#menu" title="aller au menu"><span>menu</span></a></li><li class="tplWaiNav"><a class="waiBtn navWaiBtn" href="#navigation" title="aller &agrave; la navigation"><span>navigation</span></a></li><li class="tplWaiTools"><a class="waiBtn toolsWaiBtn" href="#tools" title="aller aux outils"><span>outils</span></a></li><li class="tplWaiFoot"><a class="waiBtn footWaiBtn" href="#footer" title="aller au pied de page"><span>pied de page</span></a></li></ul><noscript>Attention, votre navigateur ne supporte pas le javascript ou celui-ci a &eacute;t&eacute; d&eacute;sactiv&eacute;. Certaines fonctionnalit&eacute;s de ce module sont restreintes.</noscript><h1 id="titleRoot"><span>Windows 8</span></h1></div><div id="tplLft"><hr class="hidden"><a id="tools" class="accessAnc" name="tools" href="#tools"></a><strong class="hidden">Mode&nbsp;: </strong><ul class="mnuMode"><li><span class="playBtnSel"><img alt="Cours" src="../skin/img/btn/playSel.png" class="btnImg"><span class="btnLbl">Cours</span></span></li><li><a class="modeBtn toolsBtn saveBtn " target="_self" href="Exports_web_1.html" title="Outils transverses"><span><img alt="Outils" src="../skin/img/btn/tools.png" onmouseover="this.src='../skin/img/btn/toolsOver.png';" onmouseout="this.src='../skin/img/btn/tools.png';" class="btnImg"><span class="btnLbl">Outils</span></span></a></li></ul></div><div id="tplMain" class="tplMainMnu_open"><div id="tplMnu"><hr class="hidden"><a id="menu" class="accessAnc" name="menu" href="#menu"></a><strong class="hidden">Menu&nbsp;: </strong><div class="mnuBlock"></div><div class="mnuFra"><ul class="mnu mnu_static  mnu_sch_no"><li class="mnu_sel_no mnu_l mnu_dpt_0 mnu_obj"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_0 mnu_obj mnu_sch_no" id="windows8.html"><a href="windows8.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Objectifs</span></span></a></div></li><li class="mnu_sel_no mnu_l mnu_dpt_0 mnu_intro"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_0 mnu_intro mnu_sch_no" id="windows8_1.html"><a href="windows8_1.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Introduction</span></span></a></div></li><li class="mnu_sel_no mnu_b mnu_dpt_0 mnu_ueDiv"><div class="mnuLbl mnu_sel_no mnu_b mnu_b_c mnu_dpt_0 mnu_ueDiv mnu_sch_no" id="Historique.html"><a href="Historique.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Historique de Windows</span></span></a></div></li><li class="mnu_sel_no mnu_b mnu_dpt_0 mnu_ueDiv"><div class="mnuLbl mnu_sel_no mnu_b mnu_dpt_0 mnu_ueDiv mnu_sch_no" id="priseenmain.html"><a href="priseenmain.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Prise en main</span></span></a></div><ul class="mnu_sub mnu_sub_o"><li class="mnu_sel_no mnu_l mnu_dpt_1 mnu_intro"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_1 mnu_intro mnu_sch_no" id="priseenmain_1.html"><a href="priseenmain_1.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Introduction</span></span></a></div></li><li class="mnu_sel_no mnu_l mnu_dpt_1 mnu_expUc"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_1 mnu_expUc mnu_sch_no" id="BureauAccueilWin8.html"><a href="BureauAccueilWin8.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Utiliser le bureau et l'&eacute;cran d'accueil</span></span></a></div></li><li class="mnu_sel_no mnu_l mnu_dpt_1 mnu_expUc"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_1 mnu_expUc mnu_sch_no" id="explorateurWin8.html"><a href="explorateurWin8.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>L'explorateur Windows 8.1</span></span></a></div></li><li class="mnu_sel_no mnu_l mnu_dpt_1 mnu_expUc"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_1 mnu_expUc mnu_sch_no" id="RechercherInstallerWin8.html"><a href="RechercherInstallerWin8.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Rechercher et/ou installer une application</span></span></a></div></li><li class="mnu_sel_no mnu_b mnu_dpt_1 mnu_courseUa"><div class="mnuLbl mnu_sel_no mnu_b mnu_dpt_1 mnu_courseUa mnu_sch_no" id="qcmPriseEnMainWindows.html"><a href="qcmPriseEnMainWindows.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>QCM Prise en main de Windows</span></span></a></div><ul class="mnu_sub mnu_sub_o"><li class="mnu_sel_no mnu_l mnu_dpt_2 mnu_trainUc"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_2 mnu_trainUc mnu_sch_no" id="qcmPriseEnMainWindows_1.html"><a href="qcmPriseEnMainWindows_1.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Exercice&nbsp;: Question 1</span></span></a></div></li><li class="mnu_sel_no mnu_l mnu_dpt_2 mnu_trainUc"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_2 mnu_trainUc mnu_sch_no" id="qcmPriseEnMainWindows_2.html"><a href="qcmPriseEnMainWindows_2.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Exercice&nbsp;: Question 2</span></span></a></div></li><li class="mnu_sel_no mnu_l mnu_dpt_2 mnu_trainUc"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_2 mnu_trainUc mnu_sch_no" id="qcmPriseEnMainWindows_3.html"><a href="qcmPriseEnMainWindows_3.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Exercice&nbsp;: Question 3</span></span></a></div></li><li class="mnu_sel_yes mnu_l mnu_dpt_2 mnu_trainUc"><div class="mnuLbl mnu_sel_yes mnu_l mnu_dpt_2 mnu_trainUc mnu_sch_no" id="qcmPriseEnMainWindows_4.html"><span class="mnu_i"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Exercice&nbsp;: Question 4</span></span></span></div></li><li class="mnu_sel_no mnu_l mnu_dpt_2 mnu_trainUc"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_2 mnu_trainUc mnu_sch_no" id="qcmPriseEnMainWindows_5.html"><a href="qcmPriseEnMainWindows_5.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Exercice&nbsp;: Question 5</span></span></a></div></li></ul></li><li class="mnu_sel_no mnu_l mnu_dpt_1 mnu_conclu"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_1 mnu_conclu mnu_sch_no" id="priseenmain_2.html"><a href="priseenmain_2.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Conclusion</span></span></a></div></li></ul></li><li class="mnu_sel_no mnu_l mnu_dpt_0 mnu_conclu"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_0 mnu_conclu mnu_sch_no" id="windows8_2.html"><a href="windows8_2.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Conclusion</span></span></a></div></li></ul><script type="text/javascript">scServices.totalPages = 27;</script></div><div id="tplIco"><div class="decoTrainUc"></div></div></div><div id="tplCo"><div class="scroller"><hr class="hidden"><a id="content" class="accessAnc" name="content" href="#content"></a><strong class="hidden">Contenu&nbsp;: </strong><div id="tplCoMarginW" style><div id="tplCoFlexTop"></div><div class="mainContent"><h2 class="mainContent_ti">Question 4</h2><p id="noJsWarn">Attention, votre navigateur ne supporte pas le javascript ou celui-ci a &eacute;t&eacute; d&eacute;sactiv&eacute;. Certaines fonctionnalit&eacute;s dynamiques de ce module sont restreintes.</p><script type="text/JavaScript">var vNoJsWarn = scPaLib.findNode("ide:noJsWarn");
+if (vNoJsWarn && vNoJsWarn.parentNode) vNoJsWarn.parentNode.removeChild(vNoJsWarn);
+</script><div class="divQuiz"><script type="text/JavaScript">
+var PWtanr1M9yfhWNvD2pVyxc = {
+
+	fId : "PWtanr1M9yfhWNvD2pVyxc",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "play" : {
+		var vForm = document.forms.PWtanr1M9yfhWNvD2pVyxc_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = false;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("PWtanr1M9yfhWNvD2pVyxc_"+vResp).checked = true;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N_choiceList"), "visible");
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N_gExpln"), "collapsed");
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N_score"), "invisible");
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N_question"), "visible");
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N0_choice"), "visible");
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N1_choice"), "visible");
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N2_choice"), "visible");
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N0_label"), "visible");
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N1_label"), "visible");
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N2_label"), "visible");
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N0_chExpln"), "collapsed");
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N1_chExpln"), "collapsed");
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N2_chExpln"), "collapsed");
+scAssmntMgr.setToggleStatus(sc$("PWtanr1M9yfhWNvD2pVyxc_S_N69"), false);
+var vRespSession = "";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput, pIdx) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", pIdx);
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}				
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.PWtanr1M9yfhWNvD2pVyxc_form.PWtanr1M9yfhWNvD2pVyxc_radio[2].checked ?  this.fMaxPts : this.fMinPts;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {
+for(var i = 0; i < vForm.length; i++) if(vForm.elements[i].checked) break;
+		scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", (i < vForm.length) ? vForm.elements[i].value : null);
+}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	onActionN90 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+
+		scServices.assmntMgr.commit();
+	},
+	onActionN69 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+		var vIsOn = scAssmntMgr.isToggleOn(pButton);
+		if(vIsOn) {
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N_score"), "invisible");
+this.setSolution(false); scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N_gExpln"), "collapsed");
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N0_chExpln"), "collapsed"); scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N1_chExpln"), "collapsed"); scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N2_chExpln"), "collapsed"); 
+		} else {
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N_score"), "visible");
+this.setSolution(true); scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N_gExpln"), "visible");
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N0_chExpln"), "visible"); scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N1_chExpln"), "visible"); scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N2_chExpln"), "visible"); 
+		}
+		scAssmntMgr.setToggleStatus(pButton, ! vIsOn);
+		scServices.assmntMgr.commit();
+	},
+	fct_play : function(){
+this.initSeq("play");
+
+	},
+	fct_reset : function(){
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+
+	},
+	fct_displaySol : function(){
+this.setSolution(true); scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N0_chExpln"), "visible"); scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N1_chExpln"), "visible"); scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N2_chExpln"), "visible"); scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N_gExpln"), "visible");
+
+	},
+	fct_cleanSol : function(){
+this.setSolution(false); scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N_gExpln"), "collapsed");
+scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N0_chExpln"), "collapsed"); scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N1_chExpln"), "collapsed"); scAssmntMgr.setMode(sc$("PWtanr1M9yfhWNvD2pVyxc_N2_chExpln"), "collapsed"); 
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.PWtanr1M9yfhWNvD2pVyxc_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "play";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("PWtanr1M9yfhWNvD2pVyxc_SNb0");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.PWtanr1M9yfhWNvD2pVyxc_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("PWtanr1M9yfhWNvD2pVyxc_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = PWtanr1M9yfhWNvD2pVyxc;
+scOnUnloads[scOnUnloads.length] = PWtanr1M9yfhWNvD2pVyxc;
+</script><div id="PWtanr1M9yfhWNvD2pVyxc_A" style="display:none;"><div class="bkSolResOut"><div class="bkSolResFra1"><div class="bkSolResFra2"><div class="bkSolResFra3"><div class="bkSolResCo"><div class="btnCorrection"><a role="button" title="Afficher le score et la correction" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="PWtanr1M9yfhWNvD2pVyxc.onActionN69(this); return false;" class="btnQuiz " id="PWtanr1M9yfhWNvD2pVyxc_S_N69"><span class="btnQuizCaption">Correction</span></a></div><div class="btnReset"><a role="button" title="Effacer les r&eacute;ponses" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="PWtanr1M9yfhWNvD2pVyxc.onActionN90(this); return false;" class="btnQuiz "><span class="btnQuizCaption">Recommencer</span></a></div><div class="scoreBox"><div class="score " aria-live="polite" id="PWtanr1M9yfhWNvD2pVyxc_N_score"><div id="PWtanr1M9yfhWNvD2pVyxc_SNb0"><span></span></div></div></div></div></div></div></div></div><div class="headerQ"><div id="PWtanr1M9yfhWNvD2pVyxc_N_question" class="question"><div><p class="op_txt_p">Sur quel onglet de la fen&ecirc;tre de l'explorateur de fichiers puis-je g&eacute;rer la taille de mes ic&ocirc;nes&nbsp;?</p></div></div></div><div id="PWtanr1M9yfhWNvD2pVyxc_N_choiceList"><form action name="PWtanr1M9yfhWNvD2pVyxc_form" id="PWtanr1M9yfhWNvD2pVyxc_form"><table class="choiceList "><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="PWtanr1M9yfhWNvD2pVyxc_radio" id="PWtanr1M9yfhWNvD2pVyxc_0" value="0" onclick="PWtanr1M9yfhWNvD2pVyxc.setResp(this, 0);"></td><td class="choiceList_la "><div id="PWtanr1M9yfhWNvD2pVyxc_N0_choice" class="choice"><div id="PWtanr1M9yfhWNvD2pVyxc_N0_label" class="label"><p class="op_txt_p">Fichier</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="PWtanr1M9yfhWNvD2pVyxc_radio" id="PWtanr1M9yfhWNvD2pVyxc_1" value="1" onclick="PWtanr1M9yfhWNvD2pVyxc.setResp(this, 1);"></td><td class="choiceList_la "><div id="PWtanr1M9yfhWNvD2pVyxc_N1_choice" class="choice"><div id="PWtanr1M9yfhWNvD2pVyxc_N1_label" class="label"><p class="op_txt_p">Accueil</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="PWtanr1M9yfhWNvD2pVyxc_radio" id="PWtanr1M9yfhWNvD2pVyxc_2" value="2" onclick="PWtanr1M9yfhWNvD2pVyxc.setResp(this, 2);"></td><td class="choiceList_la "><div id="PWtanr1M9yfhWNvD2pVyxc_N2_choice" class="choice"><div id="PWtanr1M9yfhWNvD2pVyxc_N2_label" class="label"><p class="op_txt_p">Affichage</p></div></div></td></tr></table></form></div></div></div></div></div><div id="tplCoSpacer"></div></div></div></div><div id="tplRgt"><hr class="hidden"><a id="navigation" class="accessAnc" name="navigation" href="#navigation"></a><strong class="hidden">Navigation&nbsp;: </strong><a href="qcmPriseEnMainWindows_3.html" target="_self" class="navBtn prevBtn btnPrv" title="Pr&eacute;c&eacute;dent (Exercice&nbsp;: Question 3)"><span><img alt="Pr&eacute;c&eacute;dent" src="../skin/img/btn/prev.png" onmouseover="this.src='../skin/img/btn/prevOver.png';" onmouseout="this.src='../skin/img/btn/prev.png';" class="btnImg"><span class="btnLbl">Pr&eacute;c&eacute;dent</span></span></a><span class="hidden"> | </span><a href="qcmPriseEnMainWindows_5.html" target="_self" class="navBtn nextBtn btnNxt" title="Suivant (Exercice&nbsp;: Question 5)"><span><img alt="Suivant" src="../skin/img/btn/next.png" onmouseover="this.src='../skin/img/btn/nextOver.png';" onmouseout="this.src='../skin/img/btn/next.png';" class="btnImg"><span class="btnLbl">Suivant</span></span></a></div><div id="tplBtm"><hr class="hidden"><a id="footer" class="accessAnc" name="footer" href="#footer"></a><span id="tplBtmLeft"><a class="homeBtn " target="_self" href="Exports_web.html" title="Accueil"><span><img alt="Accueil" src="../skin/img/btn/home.png" onmouseover="this.src='../skin/img/btn/homeOver.png';" onmouseout="this.src='../skin/img/btn/home.png';" class="btnImg"><span class="btnLbl">Accueil</span></span></a><span class="hidden"> | </span><a href="#" onclick="window.print();return false;" class="printBtn" title="Imprimer la page"><span><img alt="Imprimer" src="../skin/img/btn/print.png" onmouseover="this.src='../skin/img/btn/printOver.png';" onmouseout="this.src='../skin/img/btn/print.png';" class="btnImg"><span class="btnLbl">Imprimer</span></span></a></span><span id="tplBtmIn"><span class="hidden"> | </span><span class="hidden"> | </span><a id="linkSp" target="_blank" href="http://scenari-platform.org" title="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)"><span><img alt="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)" src="../skin/img/struct/scBtn.png"></span></a></span></div></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();new scSiRuleAutoMarginW("tplCoMarginW","ide:tplCo",true,510,100);new scSiRuleFlexH("tplCoFlexTop","ide:tplCo",true,.3);scCodeMgr.init();outMgr.init("ide:tplMain","ide:tplMnu","ide:tplMnu/des:ul.mnu");scImgMgr.init();</script>
+ </body>
+</html>
