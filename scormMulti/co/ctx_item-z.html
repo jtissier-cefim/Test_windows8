@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+                      "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">html{height:100%;}</style>
+  <title></title>
+  <script type="text/JavaScript">
+		var scServices = {};
+		
+		scServices["scLoad"] = { loadFromRoot : function(pUrl) {sc$("mainFrame").src = "../"+pUrl;},
+			getUrlFromRoot:function(pHref){if(!this.fRootOffset) this.fRootOffset = scCoLib.hrefBase().lastIndexOf("/", scCoLib.hrefBase().lastIndexOf("/")-1); return pHref.substring(this.fRootOffset+1);},
+			getRootUrl:function(){if(!this.fRootUrl) this.fRootUrl = scCoLib.hrefBase().substring(0,scCoLib.hrefBase().lastIndexOf("/", scCoLib.hrefBase().lastIndexOf("/")-1)); return this.fRootUrl;}
+		}
+		
+		var scUrlToLoad = null;
+</script>
+  <script type="text/JavaScript" src="../lib-sm/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../svc/scormMulti.js"></script>
+  <script type="text/JavaScript" src="../svc/annotSvc/annotSvc.js"></script>
+  <script type="text/JavaScript" src="../svc/lmsHack/lmsHack.js"></script>
+  <script type="text/JavaScript">
+// Paramétrage du service completionStorage :
+//   - "completed" SSi un score est affecté pour les assmntUa
+//   - pas de commit auto sur un changement de valeur
+scServices.completionStorage.getCurrentCompletionStatus = function(){
+	if(scServices.completionStorage._xIsAssmntUa){
+		if(scServices.scorm2k4 && scServices.scorm2k4.isScorm2k4Active()) {
+			var vApi = scServices.scorm2k4.getScorm2k4API();
+			return (vApi.GetValue("cmi.score.scaled")!=null && vApi.GetValue("cmi.score.scaled")!=="") ? "completed" : "incomplete" ;
+		} else if(scServices.scorm12 && scServices.scorm12.isScorm12Active()) {
+			var vApi = scServices.scorm12.getScorm12API();
+			return (vApi.LMSGetValue("cmi.core.score.raw")!=null && vApi.LMSGetValue("cmi.core.score.raw")!=="") ? "completed" : "incomplete" ;
+		}
+	}else
+		return "completed";
+}
+scServices.completionStorage._SendDataOnSave = false;
+
+// Paramétrage du service exitModeStorage:
+//   - pas de commit auto sur un changement de valeur
+scServices.exitModeStorage._SendDataOnTerminate = false;
+//   - exit : "suspend" quand le parcours du SCO n’est pas complet, et "" (terminé) quand le parcours du SCO est complet
+scServices.exitModeStorage.getExitMode = function(){
+	return scServices.completionStorage.getCurrentCompletionStatus()=="completed" ? "" : "suspend" ;
+}
+
+// Paramétrage du service suspendDataStorage :
+//   - pas de commit sur le changement de page des assmnts
+scServices.suspendDataStorage._SendDataOnSave=false
+
+// Paramétrage du service assmntMgr:
+//   - pas de commit sur le changement de page des assmnts
+scServices.assmntMgr._SendDataOnSave = false;
+scOnLoads[scOnLoads.length] = { onLoad: function(){ sc$("mainFrame").src = scUrlToLoad ? "../"+scUrlToLoad : "priseenmain_1.html"}, loadSortKey: "ZZloadRootPage"}
+</script>
+ </head>
+ <frameset>
+  <frame id="mainFrame" name="mainFrame" src="" marginwidth="0" marginheight="0" scrolling="auto" frameborder="0" title="Windows 8">
+  <noframes>
+   <body>Your browser does not handle frames, this site will not work properly.</body>
+  </noframes>
+ </frameset>
+</html>
